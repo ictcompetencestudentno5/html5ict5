@@ -1,0 +1,156 @@
+.MAIN {
+    position: absolute;
+    top: 6%;
+    left: 45%;
+}
+
+.MAIN2 {
+    position: absolute;
+    top: 9.2%;
+    left: 48.5%;
+}
+
+.CONTACTS1 {
+    position: absolute;
+    top: 20%;
+    left: 2%;    
+}
+
+.NUMBER {
+    position: absolute;
+    top: 26%;
+    left: 3%;   
+}
+
+.GMAIL {
+    position: absolute;
+    top: 28%;
+    left: 3%;   
+}
+
+.ADDRESS {
+      position: absolute;
+    top: 32%;
+    left: 3%;   
+}
+
+.EDUCATION {
+    position: absolute;
+    top: 40%;
+    left: 2%;   
+}
+
+.SCHandADDRESS {
+    position: absolute;
+    top: 46%;
+    left: 3%;   
+}
+
+.SandY {
+    position: absolute;
+    top: 48%;
+    left: 3%;   
+}
+
+.EDUCSUMMARY1 {
+     position: absolute;
+    top: 50%;
+    left: 3%;  
+}
+
+.EDUCSUMMARY2 {
+      position: absolute;
+    top: 52%;
+    left: 3%;  
+}
+
+.SKILLS{
+      position: absolute;
+    top: 60%;
+    left: 2%;  
+}
+
+.InternetResearch {
+     position: absolute;
+    top: 65%;
+    left: 3%;  
+}
+
+.TypingSkills {
+        position: absolute;
+    top: 67%;
+    left: 3%;  
+}
+
+.Cooperative {
+    position: absolute;
+    top: 69%;
+    left: 3%;  
+}
+
+.HOBBIES{
+    position: absolute;
+    top: 79%;
+    left: 2%;  
+}
+
+.DRAWING {
+     position: absolute;
+    top: 85%;
+    left: 3%; 
+}
+
+.SLEEPING {
+     position: absolute;
+    top: 87%;
+    left: 3%; 
+}
+
+.EXPERIENCES {
+    position: absolute;
+    top: 20%;
+    right:17%; 
+}
+
+.Exp1 {
+    position: absolute;
+    top: 22%;
+    right: 7%;
+}
+
+.ACHIEVEMENT {
+     position: absolute;
+    top: 40%;
+    right: 16.4%; 
+}
+
+.ACH1 {
+     position: absolute;
+    top: 46%;
+    right: 16.7%;
+}
+
+.ACH2 {
+    position: absolute;
+    top: 48%;
+    right: 11%;
+}
+
+a  {
+     position: absolute;
+    top: 97%;
+    right: 1%;
+}
+
+.hr1 {
+    margin-top: 7%;
+}
+
+.hr2 {
+    margin-top: -10px;
+    position: absolute;
+    height: 900px;
+    left: 1100px;
+}
+
+
