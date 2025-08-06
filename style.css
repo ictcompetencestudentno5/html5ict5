@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: lightcyan;
-    color: #333;
+    background:linear-gradient(to right, #FFEAEA, #F5CBCB, #748DAE, #9ECAD6);
+    color: #2c3e50;
 }   
 
 .NAME {
@@ -19,14 +19,24 @@ body {
 }
 
 a { 
-    color: #002244;
+    color: #2c3e50;
     font-size: 20px;
     text-decoration: none;
 }
 
-a:hover {
+a::before {
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+a:hover::before {
+    content: "■";
+    opacity: 1;
     font-size: 25px;
-    color: #0055aa;
+    color: #1e3c75;
+    animation: infinite blink 1s;
 }
 
 .b {
@@ -34,4 +44,9 @@ a:hover {
     align-items: center;
     justify-content: center;
     height: 270px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
 }
