@@ -15,7 +15,7 @@ body {
     position: absolute;
     font-size: 30px;
     top: 52px;
-    left: 1150px;
+    left: 1146px;
     font-style: italic;
 }
 
@@ -31,9 +31,9 @@ a:hover {
 
 .activity {
     position: absolute;
-    top: 148px;
-    left: 1025px;
-    font-size: 20px;
+    top: 130px;
+    left: 905px;
+    font-size: 25px;
 }
 
 .links {
