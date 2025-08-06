@@ -12,16 +12,16 @@ body {
 }
 
 .sec {
-    position: absolute;
+    text-align: center;
     font-size: 30px;
-    top: 52px;
-    left: 1146px;
     font-style: italic;
+    margin-top: -80px;
 }
 
 a { 
     color: #002244;
     font-size: 20px;
+    text-decoration: none;
 }
 
 a:hover {
@@ -29,14 +29,9 @@ a:hover {
     color: #0055aa;
 }
 
-.activity {
-    position: absolute;
-    top: 130px;
-    left: 905px;
-    font-size: 25px;
-}
-
-.links {
-    text-align: center;
-    border: 1px solid black;
+.b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
 }
