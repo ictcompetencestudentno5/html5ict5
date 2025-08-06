@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightcyan;
+    color: #333;
+}   
+
+.NAME {
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    
+}
+
+.sec {
+    position: absolute;
+    font-size: 30px;
+    top: 52px;
+    left: 1150px;
+    font-style: italic;
+}
+
+a { 
+    color: #002244;
+    font-size: 20px;
+}
+
+a:hover {
+    font-size: 25px;
+    color: #0055aa;
+}
+
+.activity {
+    position: absolute;
+    top: 148px;
+    left: 1025px;
+    font-size: 20px;
+}
+
+.links {
+    text-align: center;
+    border: 1px solid black;
+}
