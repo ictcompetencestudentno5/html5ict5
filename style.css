@@ -1,14 +1,19 @@
+html {
+    scrolling-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background:linear-gradient(to right, #FFEAEA, #F5CBCB, #748DAE, #9ECAD6);
+    background: linear-gradient(to right, #FFEAEA, #F5CBCB, #748DAE, #9ECAD6);
     color: #2c3e50;
+    animation: gradientshift 15s ease infinite;
+    user-select: none;
 }   
 
 .NAME {
     text-align: center;
     font-size: 50px;
     font-style: italic;
-    
 }
 
 .sec {
@@ -50,3 +55,15 @@ a:hover::before {
     0%, 100% { opacity: 0; }
     50% { opacity: 1; }
 }
+
+.upd::before {
+    content: "updated now august 7, 2025";
+    animation: blink 3s infinite;
+}
+
+@keyframes gradientshift {
+    0% { background-position: 0% 50% ; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50% ; }
+}
+

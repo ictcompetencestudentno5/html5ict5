@@ -1,67 +1,32 @@
 .MAIN {
-    position: absolute;
-    top: 6%;
-    left: 45%;
+    text-align: center;
+    margin-top: -80px;
 }
 
 .MAIN2 {
-    position: absolute;
-    top: 9.2%;
-    left: 48.5%;
+    text-align: center;
+    margin-top: -29px;
 }
 
-.CONTACTS1 {
-    position: absolute;
-    top: 20%;
-    left: 2%;    
+.CONTACTS {
+    margin: 2px 0;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding: 0;
+    line-height: -1;
 }
 
-.NUMBER {
-    position: absolute;
-    top: 26%;
-    left: 3%;   
+.nga {
+    margin: 2px 0;
+    margin-left: 18px;
+    margin-top: -25px;
+    padding: 0;
+    line-height: 1.2;
 }
 
-.GMAIL {
-    position: absolute;
-    top: 28%;
-    left: 3%;   
-}
-
-.ADDRESS {
-      position: absolute;
-    top: 32%;
-    left: 3%;   
-}
-
-.EDUCATION {
-    position: absolute;
-    top: 40%;
-    left: 2%;   
-}
-
-.SCHandADDRESS {
-    position: absolute;
-    top: 46%;
-    left: 3%;   
-}
-
-.SandY {
-    position: absolute;
-    top: 48%;
-    left: 3%;   
-}
-
-.EDUCSUMMARY1 {
-     position: absolute;
-    top: 50%;
-    left: 3%;  
-}
-
-.EDUCSUMMARY2 {
-      position: absolute;
-    top: 52%;
-    left: 3%;  
+.EDUC {
+    margin-top: 20px;
+    margin-left: 15px;
 }
 
 .SKILLS{
@@ -153,4 +118,8 @@ a  {
     left: 1100px;
 }
 
-
+@media (max-width: 1440px) {
+    .hr2 {
+        left: 720px;
+    }
+}   
