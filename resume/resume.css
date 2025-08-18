@@ -106,3 +106,13 @@ body {
     display: block !important;
 }
 
+@media (max-width: 768px) {
+  .resume {
+    flex-direction: column;
+  }
+  pre {
+    font-size: 14px;
+  }
+}
+
+
