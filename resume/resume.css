@@ -1,125 +1,108 @@
-.MAIN {
-    text-align: center;
-    margin-top: -80px;
+body {
+    background: #1e1e1e;
+    padding: 20px;
+    color: white;
+}
+ /* color */
+.line { border-right: 1px groove grey;}
+.c { color: #6A9955;}
+.class { color: #82aaff;}
+.tag { color: #569CD6;}
+.string { color: #CE9178;}
+.g { color: gray;}
+
+/* position left*/
+.cr1 {
+    display: block;
+    margin-top: -502px;
+    margin-left: -85px;
+    font-size: 17px;
+
+}
+.cr2 {
+    display: block;
+    margin-top: -63px;
+    margin-left: -85px;
+    font-size: 17px;
 }
 
-.MAIN2 {
-    text-align: center;
-    margin-top: -29px;
+.cr3 {
+    display: block;
+    margin-top: -63px;
+    margin-left: -85px;
+    font-size: 17px;
+}
+.cr4 {
+    display: block;
+    margin-top: -63px;
+    margin-left: -85px;
+    font-size: 17px;
+}
+.cr5 {
+    display: block;
+    margin-top: -63px;
+    margin-left: -85px;
+    font-size: 17px;
 }
 
-.CONTACTS {
-    margin: 2px 0;
-    margin-left: 15px;
-    margin-top: 10px;
-    padding: 0;
-    line-height: -1;
+
+/* position right*/
+.leftc {
+    display: block;
+    margin-top: -85px;
+}
+.c {
+    display: block;
+    font-size: 17px;
+    margin-top: -35px;
+    margin-left: 474px;
+}
+.cf1 {
+    font-size: 17px;
+    margin-left: 400px;
+    margin-top: -77px;
+}
+.cf2 {
+    display: block;
+    font-size: 17px;
+    margin-top: -63px;
+    margin-left: 400px;
+}
+.cf3 {
+    display: block;
+    font-size: 17px;
+    margin-top: -63px;
+    margin-left: 400px;
+}
+.cf4 {
+    display: block;
+    font-size: 17px;
+    margin-top: -63px;
+    margin-left: 400px;
 }
 
-.nga {
-    margin: 2px 0;
-    margin-left: 18px;
-    margin-top: -25px;
-    padding: 0;
-    line-height: 1.2;
+
+/* img */
+.img1 {
+    display: block;
+    margin-top: -255px;
+    margin-left: -122px;
+    font-size: 17px;
+}
+.img2 {
+    display: block;
+    margin-top: 90px;
+    margin-left: -122px;
+    font-size: 17px;
+}
+.p {
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
+    margin-left: 17px !important;
+    margin-top: -820px !important;
+    border: 2px solid #333 !important;
+    display: block !important;
 }
 
-.EDUC {
-    margin-top: 20px;
-    margin-left: 15px;
-}
-
-.SKILLS{
-      position: absolute;
-    top: 60%;
-    left: 2%;  
-}
-
-.InternetResearch {
-     position: absolute;
-    top: 65%;
-    left: 3%;  
-}
-
-.TypingSkills {
-        position: absolute;
-    top: 67%;
-    left: 3%;  
-}
-
-.Cooperative {
-    position: absolute;
-    top: 69%;
-    left: 3%;  
-}
-
-.HOBBIES{
-    position: absolute;
-    top: 79%;
-    left: 2%;  
-}
-
-.DRAWING {
-     position: absolute;
-    top: 85%;
-    left: 3%; 
-}
-
-.SLEEPING {
-     position: absolute;
-    top: 87%;
-    left: 3%; 
-}
-
-.EXPERIENCES {
-    position: absolute;
-    top: 20%;
-    right:17%; 
-}
-
-.Exp1 {
-    position: absolute;
-    top: 22%;
-    right: 7%;
-}
-
-.ACHIEVEMENT {
-     position: absolute;
-    top: 40%;
-    right: 16.4%; 
-}
-
-.ACH1 {
-     position: absolute;
-    top: 46%;
-    right: 16.7%;
-}
-
-.ACH2 {
-    position: absolute;
-    top: 48%;
-    right: 11%;
-}
-
-a  {
-     position: absolute;
-    top: 97%;
-    right: 1%;
-}
-
-.hr1 {
-    margin-top: 7%;
-}
-
-.hr2 {
-    margin-top: -10px;
-    position: absolute;
-    height: 900px;
-    left: 1100px;
-}
-
-@media (max-width: 1440px) {
-    .hr2 {
-        left: 720px;
-    }
-}   
