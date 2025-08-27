@@ -1,5 +1,5 @@
 html {
-    scrolling-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -57,7 +57,7 @@ a:hover::before {
 }
 
 .upd::before {
-    content: "updated now august 7, 2025";
+    content: "updated now august 27, 2025";
     animation: blink 3s infinite;
 }
 

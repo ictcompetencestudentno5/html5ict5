@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+
+}
+
+/* color */
+#line { border-right: 1px groove grey;}
+#attr { color: #82aaff;}
+#c { color: #6A9955;}
+#tag { color: #569CD6;}
+#string { color: #CE9178;}
+#g { color: gray;}
+
+
+.AL { /*Left first example*/
+    display: block;
+    margin-top:50px;
+    margin-right: 725px;
+    border: 1px solid white;
+    
+}
+
+.AR { /*Right first example*/
+    display: block;
+    margin-top: -309px;
+    margin-left: 635px;
+    border: 1px solid white;
+    padding: 18.4px;
+}
+
+.BL { /*Left second example*/
+    display: block;
+    margin-top: 50px;
+    margin-right: 725px;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.BR { /*Right second example*/
+    display: block;
+    margin-top: -319.5px;
+    margin-left: 635px;
+    border: 1px solid white;
+    padding: 51.8px;
+}

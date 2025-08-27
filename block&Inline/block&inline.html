@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block and inline</title>
+    <link rel="stylesheet" href="block&inline.css">
+</head>
+<body>
+    <h1><u>Block</u></h1>
+    <p>Block element is an element that starts with a new line</p>
+
+     this text is not suppose to connect<br>
+     but if we use a block element like <u style="color: #569CD6;">&lt;div&gt;</u> or <u style="color: #569CD6;">&lt;pre&gt;</u><br>
+
+     <!--EXAMPLE A-->
+      <!--LEFT-->
+      <div class="AL">
+        <span id="c">&lt;!--Example of Block element--&gt;</span><br>
+        <span id="g">&lt;</span><span id="tag">p</span><span id="attr"> style</span>=<span id="string">"border: 1px solid white"</span><span id="g">&gt;</span>This text is<span id="g">&lt;/</span><span id="tag">p</span><span id="g">&gt;</span><br>
+        <span id="g">&lt;</span><span id="tag">div</span><span id="attr"> style</span>=<span id="string">"border: 1px solid white"</span><span id="g">&gt;</span>not suppose<span id="g">&lt;/</span><span id="tag">div</span><span id="g">&gt;</span><br>
+        <span id="g">&lt;</span><span id="tag">p</span><span id="attr"> style</span>=<span id="string">"border: 1px solid white"</span><span id="g">&gt;</span>to connect<span id="g">&lt;/</span><span id="tag">p</span><span id="g">&gt;</span><br>
+        <pre>
+<span id="g">&lt;</span><span id="tag">p</span><span id="g">&gt;</span>Block elements will always start on a new 
+line and take up the full width 
+available<span id="g">&lt;/</span><span id="tag">p</span><span id="g">&gt;</span><br>
+        </pre>
+      </div>
+      <!--EXAMPLE A-->
+        <!--RIGHT-->
+        <div class="AR">
+          <p style="border: 1px solid white">this text is </p>
+          <div style="border: 1px solid white">not suppose</div>
+          <p style="border: 1px solid white">to connect</p>
+          <p>Block elements will always start on a new line and take up the full width available</p>
+        </div>
+
+      <!--EXAMPLE B-->
+        <!--LEFT-->
+        <h1 style="margin-top: 20px;"><u>Inline</u></h1>
+        <p>will not start on a new line and only takes up as much width as necessary.</p>
+
+        example tag is <span id="tag">&lt;span&gt;</span> 
+        <div class="BL">
+          <span id="c">&lt;!--Example of Inline element--&gt;</span><br>
+          <span id="g">&lt;</span><span id="tag">p</span><span id="g">&gt;</span>This is an inline span  <span id="g">&lt;</span><span id="tag">span</span><span id="attr"> style</span>=<span id="string">"border: 1px solid<br>
+            white"</span><span id="g">&gt;</span>Hello World<span id="g">&lt;/</span><span id="tag">span</span><span id="g">&gt;</span><span>element inside a paragraph.</span><span id="g">&lt;/</span><span>p</span><span id="g">&gt;</span><br>
+          <pre>
+<span id="g">&lt;</span><span id="tag">p</span><span id="g">&gt;</span>The SPAN element is an inline element, 
+and will not start on a new line and only 
+takes up as much width as necessary.<span id="g">&lt;/</span><span id="tag">p</span><span id="g">&gt;</span>
+          </pre>
+        </div>
+        <!--EXAMPLE B-->
+          <!--RIGHT-->
+          <div class="BR">
+            <p>This is an inline span <span style="border: 1px solid white">Hello World</span> element inside a paragraph.</p>
+
+            <p>The SPAN element is an inline element, and will not start on a new line and only takes up as much width as necessary.</p>
+          </div>
+        
+</body>
+</html>
