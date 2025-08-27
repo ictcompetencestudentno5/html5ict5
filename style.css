@@ -60,9 +60,3 @@ a:hover::before {
     content: "updated now august 27, 2025";
     animation: blink 3s infinite;
 }
-
-@keyframes gradientshift {
-    0% { background-position: 0% 50% ; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50% ; }
-}
