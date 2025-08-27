@@ -17,31 +17,32 @@ body {
 .AL { /*Left first example*/
     display: block;
     margin-top:50px;
-    margin-right: 725px;
+    margin-right: 1009px;
     border: 1px solid white;
     
 }
 
 .AR { /*Right first example*/
     display: block;
-    margin-top: -309px;
-    margin-left: 635px;
+    margin-top: -309.6px;
+    margin-left: 900px;
     border: 1px solid white;
-    padding: 18.4px;
+    padding: 32.6px;
 }
 
 .BL { /*Left second example*/
     display: block;
     margin-top: 50px;
-    margin-right: 725px;
+    margin-right: 1009px;
     border: 1px solid white;
     padding: 20px;
 }
 
 .BR { /*Right second example*/
     display: block;
-    margin-top: -319.5px;
-    margin-left: 635px;
+    margin-top: -292px;
+    margin-left: 900px;
     border: 1px solid white;
-    padding: 51.8px;
+    padding: 65.8px;
 }
+
