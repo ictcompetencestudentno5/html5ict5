@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(to bottom, #f80000, 	#ba0000, black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    animation: 
+        blurIn 5s ease-in forwards;
+}
+@keyframes blurIn {
+    0% { filter: blur(0); }
+    100% { filter:blur(10px); }
+}
+
+.pf1 {
+    margin: 0;
+    position: relative;
+  background: linear-gradient(to bottom,#7c0000, #232526);
+  background-clip: text;
+  color: transparent;
+    animation: slideUp 2s ease-out forwards;
+}
+
+@keyframes slideDown{
+      0% {
+    top: 1px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: -100;
+  }
+}
+
+.wlc {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: slideDown 2s ease-in forwards;
+}
+
+@keyframes slideDown{
+      0% {
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.pf1, .wlc, .typing {
+    margin: 0;
+    padding: 0;
+}
+
+.typing {
+    font-size: 18px;
+    background-color: #7c0000;
+    border-radius: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid #fff;
+  width: 0;
+  animation:
+    typing 2s steps(14, end) forwards, /* Increase steps to 14 */
+    blink .7s step-end infinite,
+    hide-cursor 0.01s 2.1s forwards;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 9ch; } /* Increase to 14ch */
+}
+
+@keyframes hide-cursor {
+  to { border-right-color: transparent; }
+}

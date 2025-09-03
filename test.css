@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(270deg, #ba0000, #ff0000, #7c0000, #000000);
+    background-size: 600% 600%;
+    animation: sG 8s ease infinite;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    display: block;
+    min-height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes sG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    margin: 0;
+    background-clip: text;
+}
+
+.slide-down {
+  position: re
+  animation: slideDown 2s ease-out forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+
