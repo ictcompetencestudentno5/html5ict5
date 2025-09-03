@@ -1,0 +1,39 @@
+body {
+    background-image: linear-gradient(to left, black, red);
+    font-size: 30px;
+}
+
+.card1 {
+    display: block;
+    background-image: linear-gradient(to top left, black, red);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    width: 320px;
+    padding: 150px;
+    margin-bottom: -500px;
+    margin-left: 20px;
+    border: 1px solid black;
+    
+}
+
+.card1:hover {
+    padding: 200px;
+}
+
+.card{
+    display: block;
+    margin-top: -140px;
+    margin-left: -135px;
+    background-color: black;
+    color: white;
+    width: 585px;
+    border: 1px black solid;
+}
+
+#card3 {
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -100px;
+}
+
