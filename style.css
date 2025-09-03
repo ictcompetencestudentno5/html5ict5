@@ -10,7 +10,7 @@ body {
     align-items: center;
     font-size: large;
     animation: 
-        blurIn 5s ease-in forwards;
+        blurIn 13s ease-in forwards;
 }
 @keyframes blurIn {
     0% { filter: blur(0); }
@@ -23,17 +23,17 @@ body {
   background: linear-gradient(to bottom,#7c0000, #232526);
   background-clip: text;
   color: transparent;
-    animation: slideUp 2s ease-out forwards;
+    animation: slideUp 2s ease-in forwards;
 }
 
-@keyframes slideDown{
+@keyframes slideUp{
       0% {
     top: 1px;
     opacity: 0;
   }
   100% {
     top: 0;
-    opacity: -100;
+    opacity: 1;
   }
 }
 
@@ -69,7 +69,7 @@ body {
   border-right: .15em solid #fff;
   width: 0;
   animation:
-    typing 2s steps(14, end) forwards, /* Increase steps to 14 */
+    typing 2s steps(14, end) forwards,
     blink .7s step-end infinite,
     hide-cursor 0.01s 2.1s forwards;
 }
@@ -77,7 +77,7 @@ body {
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 9ch; } /* Increase to 14ch */
+  to { width: 9ch; }
 }
 
 @keyframes hide-cursor {

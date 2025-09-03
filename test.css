@@ -24,7 +24,7 @@ h1 {
 }
 
 .slide-down {
-  position: re
+  position: relative;
   animation: slideDown 2s ease-out forwards;
 }
 
