@@ -1,0 +1,25 @@
+.card1 {
+    position: relative;
+  display: inline-block;
+  background-image: linear-gradient(to top, black, red);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  width: 320px;
+  padding: 30px;
+  margin: 20px;
+  border: 1px solid black;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+
+.card1:hover {
+    padding: 50px;
+}
+.cardI {
+    color: transparent;
+}
+
+.cardI:hover {
+    color: white;
+}
+

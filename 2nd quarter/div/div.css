@@ -1,0 +1,17 @@
+div {
+    background-color: aquamarine;
+    margin: 2%;
+    width: 45%;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#pr {
+    background-color: aqua;
+}
+
+.ch {
+    background-color: antiquewhite;
+}
