@@ -1,6 +1,6 @@
 body {
   font-size: 25px;
-  background: linear-gradient(to right, #ff1a1a, #b30000, #000000);
+  background: linear-gradient(to right bottom, #b80f0f, black);
   background-size: 600% 600%;
   animation: sG 8s ease infinite;  
   background-repeat: no-repeat;
@@ -14,16 +14,11 @@ body {
   padding: 100px;
 }
 
-@keyframes sG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 20%; }
-    100% { background-position: 0% 50%; }
-}
 
 .Dv {
   margin: 0;
   position: relative;
-  background: linear-gradient(to bottom,#7c0000, #232526);
+  background: linear-gradient(to right bottom,#bd0c0c, black);
   background-clip: text;
   color: transparent;
 
@@ -39,6 +34,7 @@ body {
 .Fa   { animation: slideUp 1.5s ease-in 0s forwards; }
 .Dv   { animation: slideUp 1.5s ease-in 0.1s forwards; }
 .p2   { animation: slideUp 1.5s ease-in 0.15s forwards;}
+.projects { animation: slideUp 1.5s ease-in 0.20s forwards;}
 
 @keyframes slideUp{
       0% {
@@ -99,21 +95,28 @@ body {
 
 
 .projects {
+  position: relative;
+  background: linear-gradient(to bottom, #ff1a1a, #b30000, #000000);
   margin-top: 40px;
   padding: 20px;
   color: white;
+  border-radius: 15px;
+  
 }
 
+
 .projects h2 {
+  background: linear-gradient(to bottom, #ff1a1a, #b30000, #000000);
   font-size: 28px;
   margin-bottom: 30px;
   color: #fff;
+  border-radius: 15px;
 }
 
 /* Outer gradient card */
 .card1 {
   display: inline-block;
-  background-image: linear-gradient(to top left, black, red);
+  background-image: linear-gradient(to top, black, red);
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.4);
   width: 320px;
@@ -122,7 +125,10 @@ body {
   border: 1px solid black;
   transition: 0.3s ease-in-out;
 }
-
+.card1:hover {
+  padding: 50px;
+  box-shadow: black 0% 10%;
+}
 a {
   background-color: #000000;
   border-radius: 10px;
@@ -138,10 +144,12 @@ a:hover {
 }
 
 .projects ul li a {
-  display: inline-block; /* so padding/margin behaves nicely */
-  margin: 5px 0;         /* space between links */
+  display: inline-block; 
+  margin: 5px 0;  
 }
 
 #mp {
   text-align: center;
+  background-color: red;
 }
+
