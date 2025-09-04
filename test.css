@@ -1,7 +1,7 @@
 body {
   font-size: 25px;
-  background: linear-gradient(to right bottom, #b80f0f, black);
-  background-size: 600% 600%;
+  background: url(20215.jpg);
+  background-size: cover;
   animation: sG 8s ease infinite;  
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,6 +12,10 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
@@ -82,21 +86,16 @@ body {
 
 .p2 {
   font-size: 20px;
-  background-color: #a50303;
   list-style-position: inside;
   border-radius: 10px;
   padding: 5px 10px;
 }
 
-.p2:hover {
-  padding: 15px;
-}
 
 
 
-.projects {
+.projects  {
   position: relative;
-  background: linear-gradient(to bottom, #ff1a1a, #b30000, #000000);
   margin-top: 40px;
   padding: 20px;
   color: white;
@@ -105,8 +104,8 @@ body {
 }
 
 
-.projects h2 {
-  background: linear-gradient(to bottom, #ff1a1a, #b30000, #000000);
+.projects {
+  background-image: linear-gradient(to left top, #000000 0%, 	#450000 25%, #7f000030 50%,	#bd0000 75%,	#ff0000 100%);
   font-size: 28px;
   margin-bottom: 30px;
   color: #fff;
@@ -116,7 +115,7 @@ body {
 /* Outer gradient card */
 .card1 {
   display: inline-block;
-  background-image: linear-gradient(to top, black, red);
+  background-image: linear-gradient(to right top, black, red);
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.4);
   width: 320px;
@@ -148,8 +147,15 @@ a:hover {
   margin: 5px 0;  
 }
 
-#mp {
-  text-align: center;
-  background-color: red;
+.section-link {
+  background: linear-gradient(to bottom, #ff1a1a, #b30000, #000000);
+  color: white;
+  display: block;     
+  text-align: center;       
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-weight: bold;
 }
+
 

@@ -1,39 +1,23 @@
-body {
-    background-image: linear-gradient(to left, black, red);
-    font-size: 30px;
-}
-
-.card1 {
-    display: block;
-    background-image: linear-gradient(to top left, black, red);
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    width: 320px;
-    padding: 150px;
-    margin-bottom: -500px;
-    margin-left: 20px;
+div {
+    background-color: aquamarine;
+    margin: 2%;
+    width: 45%;
+    float: left;
     border: 1px solid black;
-    
+    text-align: center;
 }
 
-.card1:hover {
-    padding: 50px;
+#pr {
+    background-color: aqua;
 }
 
-.card{
-    display: block;
-    margin-top: -140px;
-    margin-left: -135px;
-    background-color: black;
-    color: white;
-    width: 585px;
-    border: 1px black solid;
+.ch {
+    display: flex;
+    justify-content: center; 
 }
 
-#card3 {
-    color: white;
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: -100px;
+.ch ul {
+    list-style: none;  /* removes bullets */
+    padding: 0;
+    margin: 0;
 }
-
