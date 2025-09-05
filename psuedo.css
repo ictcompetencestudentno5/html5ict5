@@ -1,0 +1,153 @@
+a {
+    font-size: 30px;
+}
+
+a:hover { /* it will apply when you hover over the link */
+    color: red;
+    font-size: 50px;
+}
+
+a:link { /* it will apply to all unvisited links */
+    color: blue;
+}
+
+a:visited { /* it will apply to all visited links */
+    color: green;
+}
+
+li:not(:hover){ /* it will apply to all list items except the one being hovered over */
+    color: green;
+}
+
+li:hover { /* it will apply to the list item being hovered over */
+    color: red;
+    font-size: 30px;
+}
+li:nth-child(odd) { /* it will apply to all odd list items also try even 1n+1*/
+    background-color: lightgrey;
+}
+
+#greet p{ /* it will apply to the paragraph inside the element with id greet */
+    background-color: yellow;
+    padding: 10px; /* add padding to the paragraph */
+    display: none; /* hide the paragraph */
+}
+
+#greet:hover p{ /* it will apply to the paragraph inside the element with id greet when you hover over the element with id greet */
+    display: inline; /* show the paragraph */
+}
+
+h1::first-letter {
+    font-size: 2em;/* change the size of the first letter */
+    font-style: italic;/* change the style of the first letter */
+}
+
+p::first-line {
+    background-color: yellow; /* change the background color of the first line */
+}
+
+p::selection {  /* it will apply to the selected text inside the paragraph */
+    background-color: grey; /* change the background color of the selected text */
+    color: rgb(70, 221, 70); /* change the text color of the selected text */
+}
+
+#fruits li::before { /* it will apply to all list items inside the element with id fruit */
+    content: "fruits ="; /* add an apple emoji before each list item */
+    margin: 10px;
+    display: none;
+}
+
+#apple::after {
+    content: "🍎"; /* add a emoji after the element with id apple */
+}
+#banana::after {
+    content: "🍌"; /* add a emoji after the element with id banana */
+}
+#cherry::after {
+    content: "🍒"; /* add a emoji after the element with id grape */
+}
+
+/*transition*/
+
+#btn {
+    color: crimson;
+    background-color: white;
+    border: 1px solid crimson;
+    box-shadow: 1px 1px 5px grey;
+    
+    /* transition-property: transform;  specify the property to apply transition to
+    transition-duration: 0.5s;  specify the duration of the transition
+    transition-timing-function: ease;  specify the timing function of the transition 
+    transition-delay: 0s;  specify the delay before the transition starts  */
+
+    /* all of that can be written in one line as below */
+    transition: all 0.5s ease 0s; /* apply transition to all properties over 0.5 seconds */
+}
+
+#btn:hover {
+    transform: translateY(-10px); /* move the button up by 20px */
+    background-color: crimson;
+    color: black;
+}
+
+/*animation*/
+
+.header-1 {
+    /* animation-name: slideInleft;  specify the name of the animation
+    animation-duration: 0.5s;  specify the duration of the animation
+    animation-timing-function: ease;  specify the timing function of the animation  */
+    /* animation-delay: 0s;  specify the delay before the animation starts */
+    /*animation-iteration-count: 1;  specify the number of times the animation should repeat */
+    /*animation-direction: normal;  specify the direction of the animation */
+    /*animation-fill-mode: none;  specify what styles should be applied to the element when the animation is not playing */
+
+    /* all of that can be written in one line as below */
+    animation: slideInleft 0.5s ease; /* apply the slideInleft animation over 0.5 seconds */
+}
+
+/*animation keyframes*/
+@keyframes slideInleft {
+    from {
+        transform: translate(300px); /* move the element 300px to the left */
+    }
+
+    to {
+        transform: translate(0); /* move the element back to its original position */
+    }
+
+}
+
+/*rotate animation*/
+.rotate {
+    display: inline-block;/* make the element inline-block to allow rotation */
+    animation: rotate 2s linear infinite ; /* apply the rotate animation over 2 seconds infinitely */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);/* rotate the element 0 degrees */
+    }
+
+    to {
+        transform: rotate(360deg);/* rotate the element 360 degrees */
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;/* apply the bounce animation over 2 seconds infinitely */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { /* every % can be in the same spot if all of their number is 0 */
+        transform: translateY(0); /* move the element back to its original position */
+    }
+    40% {
+        transform: translateY(-30px);/* move the element up by 30px */
+    }
+
+    60% {
+        transform: translateY(-15px);/* move the element up by 15px */
+    }
+}
+
+
