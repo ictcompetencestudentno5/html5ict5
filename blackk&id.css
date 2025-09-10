@@ -1,0 +1,48 @@
+#content {
+    background-color: lightblue;
+    color: red;
+    text-align: center;
+    float: left;
+    width: 100%;
+    height: 500px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+
+.odd {
+    margin: 11px;
+    text-align: center;
+    background-color: lightblue;
+    color: red;
+    border: 1px solid black;
+    border-radius: 0px;
+    margin: 10px;
+    float: left;
+    width: 32%;
+    height: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    background-color: aqua;
+    box-shadow: 10px 10px 5px grey;
+
+
+}
+
+.even {
+    margin: 11px;
+    box-shadow: 10px 10px 5px grey;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightblue;
+    color: red;
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 500px;
+    float: left;
+    width: 32%;
+    height: 150px;
+    text-align: center;
+
+}
