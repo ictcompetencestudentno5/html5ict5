@@ -1,0 +1,87 @@
+.container {
+    border: 1px solid blue;
+    margin: 10px;
+    width: 99%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#pd10 {
+    padding-left: 10px;
+    margin: 10px;
+    float: left;
+    width: 100px;
+    border-radius: 30px;
+    border: 1px solid blue;
+}
+#pd15 {
+    padding-right: 15px;
+    float: left;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+#pd25 {
+    padding-top: 10px;
+    margin: 10px;
+    float: left;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+#pd35 {
+    padding-bottom: 10px;
+    margin: 10px;
+    float: left;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+
+/* multi padding */
+#mptr10px {
+    padding-right: 10px;
+    padding-top: 10px;
+    margin: 10px;
+    float: left;
+    width: 100px;
+    border-radius: 30px;
+    border: 1px solid blue;
+}
+#mprb15px {
+    padding-right: 15px;
+    padding-bottom: 15px;
+    float: left;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+#mpbl25px {
+    margin: 10px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    float: left;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+
+#mplt35px {
+    margin: 10px;
+    padding-left: 25px;
+    padding-top: 25px;
+    float: left;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid blue;  
+}
+
+/*all side*/
+#allside {
+    padding: 25px 25px 25px 25px;
+    margin: 10px;
+    float: left;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid blue;  
+}
