@@ -1,0 +1,34 @@
+body {
+    display: flex;
+}
+/* Big box = grid wrapper */
+.big-box {
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    grid-template-rows: repeat(3, 40px);
+    background: white;
+    margin-left: 165px;
+}
+
+/* Each small box */
+.small-box {
+    border: 1px solid black;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Margin demo */
+#left {
+    margin-left: 5px;
+}
+#right {
+    margin-right: 5px;
+}
+#top {
+    margin-top: 5px;
+}
+#bottom {
+    margin-bottom: 5px;
+}
