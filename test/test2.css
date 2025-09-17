@@ -1,8 +1,50 @@
-img {
+.type {
+    font-size: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 5;
+    animation:
+        typing 2s steps(20, end) 0.5s forwards,
+        blink 1s step-end infinite 3s;
+}
+
+@keyframes typing {
+  from { width: 0; border-right-color: transparent; }
+  1% { border-right-color: white;}
+  to { width: 20ch; border-right-color: white;}
+}
+
+@keyframes blink {
+  0% { border-right-color: transparent;}
+  50% { border-right-color: white;}
+  100% { border-right-color: transparent;} 
+}
+
+
+.bochi {
     display: inline-block;
-    animation: rotate 2s linear infinite ;
+    animation: bounce 0.3s linear infinite;
+    /* animation: rotate 2s linear infinite ; */
     margin-left: 500px;
     
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translate(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(15px);
+    }
+}
+
+/*rotate*/
+.fan {
+    display: inline-block;
+    animation: rotate 2s linear infinite;
 }
 
 @keyframes rotate {
