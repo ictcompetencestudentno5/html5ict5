@@ -24,7 +24,7 @@ nav ul{
     list-style: none;
 }
 
-nav:hover {
+a:hover {
     background-color: grey;
 }
 
