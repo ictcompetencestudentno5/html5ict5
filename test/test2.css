@@ -23,7 +23,7 @@
 
 .bochi {
     display: inline-block;
-    animation: bounce 0.3s linear infinite;
+    animation: bounce 0.1s linear infinite;
     /* animation: rotate 2s linear infinite ; */
     margin-left: 500px;
     

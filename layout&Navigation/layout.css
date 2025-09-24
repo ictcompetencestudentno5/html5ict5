@@ -1,0 +1,54 @@
+header {
+    background-color: rgb(78, 78, 78);
+    padding: 35px;
+    text-align: center;
+    color: rgb(202, 202, 202);
+}
+
+section {
+    background-color: grey;
+}
+
+nav {
+  float: left;
+  width: 10%;
+  background: #ccc;
+  padding: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav:hover {
+    background-color: grey;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85.7%;
+  background-color: #f1f1f1;
+}
+
+nav, article {
+    height: 633px;
+}
+
+footer{
+    background-color: rgb(78, 78, 78);
+    padding: 35px;
+    text-align: center;
+    color: rgb(202, 202, 202);
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
