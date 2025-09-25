@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
 header {
     background-color: rgb(78, 78, 78);
     padding: 35px;
@@ -5,50 +16,66 @@ header {
     color: rgb(202, 202, 202);
 }
 
+/* Section */
 section {
     background-color: grey;
 }
 
+/* Navigation */
 nav {
-  float: left;
-  width: 10%;
-  background: #ccc;
-  padding: 20px;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-
-nav ul{
-    list-style: none;
-}
-
-a:hover {
-    background-color: grey;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 85.7%;
-  background-color: #f1f1f1;
-}
-
-nav, article {
+    float: left;
+    width: 11%;
+    background-color: #ccc;
+    padding: 11px;
     height: 633px;
 }
 
-footer{
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Article */
+article {
+    float: left;
+    width: 89%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    height: 633px; 
+}
+
+/* Footer */
+footer {
     background-color: rgb(78, 78, 78);
     padding: 35px;
     text-align: center;
     color: rgb(202, 202, 202);
+    clear: both;
+}
+/*actnot*/
+ul li a:hover:not(.active) {
+    background-color: grey;
 }
 
+ul li a.active {
+    background-color:rgb(11, 230, 11);
+}
+
+
+/* Responsive Layout */
 @media (max-width: 600px) {
     nav, article {
         width: 100%;
         height: auto;
+        float: none;
     }
 }

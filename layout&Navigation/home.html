@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <link rel="stylesheet" href="layout.css">
+    <style>
+        .home {
+    display: inline-block;
+    animation: rotate 2s linear infinite;
+    margin: 100px;
+            
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+    </style>
 </head>
 <body>
     <header>
@@ -14,7 +31,7 @@
     <section>
         <nav>
             <ul>
-                <li><a href="home.html" class="active">home</a></li>
+                <li><a class="active">home</a></li>
                 <li><a href="about.html">about</a></li>
                 <li><a href="contact.html">contact</a></li>
                 <li><a href="news.html">news</a></li>
@@ -23,6 +40,7 @@
         <article>
             <h1>home</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis reiciendis eligendi vitae molestiae cumque architecto illum pariatur inventore ad vel eos sit, aliquam expedita esse praesentium, animi placeat sunt dignissimos?</p>
+            <img src="download.webp" alt="" class="home">
         </article>
     </section>
 
