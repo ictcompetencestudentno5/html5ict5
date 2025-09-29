@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ptf text 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="portfoliotest.css">
+</head>
+<body id="Home">
+    <header>
+        <nav>
+            <h3 class="logo">ICT:NO5-<span id="red">DEV</span></h3>
+            <ul>
+                <li>
+                    <a href="#Home">Home</a>
+                </li>
+                <li>
+                    <a href="#About">About</a>
+                </li>
+                <li>
+                    <a href="#Projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="SetA">
+            <!-- Home -->
+             <div>
+                <h1 class="strand">.NET DEVELOPER</h1>
+                <p class="hobby">Testing and creating website for fun</p>
+                <a href="https://www.w3schools.com/" class="w3school">Learn from W3school</a>
+                <div class="social-icons">
+                    <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+             </div>
+
+            <div class="right">
+                <div class="profile-pic">
+                    <img src="bochi.jpeg" alt="profile">
+                </div>
+        </section>
+
+        <section class="SetB">
+            <!-- ABOUT -->
+             <div class="about-container">
+                <h1 class="About">ABOUT ME</h1>
+                <p class="about-text" id="About">Hi! I’m a .NET developer who enjoys creating and testing websites for fun. <br>
+I’m currently improving my skills by testing and trying what I can do <br>
+with the goal of becoming a game developer and building projects that <br>
+solve real-world problems.
+                </p>
+                <p class="about-text">I believe that science is our future for development for this country and this <br>
+                    world </p>
+             </div>
+                <pre class="card">
+    <span class="tag">const</span><span class="class"> developer</span> = <span></span><span class="string"> &#123;</span>
+            <span class="tag">name:</span><span class="class"> 'Aramis Gayon'</span>
+
+            <span class="tag">strand:</span><span class="class"> 'ICT Programming'</span>
+
+<span class="tag">	&#125;</span><span>&#59;</span>
+    </pre>
+  </div>
+  </section>
+
+        <section id="Projects" class="SetC">
+                <p class="section-link">my project</p>
+    <div class="card1">
+      <div class="card2">
+        <h3>1st quarter</h3>
+        <ul class="ul2">
+          <li class="li2"><a class="a2" href="1st quarter/resume/resume.html">resume</a></li>
+          <li class="li2"><a class="a2"  href="1st quarter/color/coloractivity.html">color</a></li>
+          <li class="li2"><a class="a2"  href="1st quarter/csshtmlcss/css.html">css</a></li>
+          <li class="li2"><a class="a2"  href="1st quarter/imagemap/imagemapshapes.html/map.html">img-map</a></li>
+          <li class="li2"><a class="a2"  href="1st quarter/imagemap/imageproduct/index.html">product</a></li>
+          <li class="li2"><a class="a2"  href="1st quarter/links&images/main.html">link&images</a></li>
+          <li class="li2"><a class="a2"  href="1st quarter/quizez/quiz2.html">quiz1</a></li>
+          <li class="li2"><a class="a2"  href="1st quarter/table/table.html">table</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card1">
+      <div class="card2">
+        <h3>2nd quarter</h3>
+        <ul class="ul2">
+          <li class="li2"><a class="a2" href="2nd quarter/block&Inline/block&inline.html">block&inline</a></li>
+          <li class="li2"><a class="a2" href="2nd quarter/list/list.html">list(not done)</a></li>
+          <li class="li2"><a class="a2" href="2nd quarter/div/div.html">div</a></li>
+          <li class="li2"><a class="a2" href="2nd quarter/class&id/class&id.html">class&id</a></li>
+          <li class="li2"><a class="a2" href="2nd quarter/QUIZforQ2/QUIZ1Q2.html">QUIZ1-Q2</a></li>
+          <li class="li2"><a class="a2" href="2nd quarter/navigaaation/nav.html">navigation/padding/
+            <br>margin/border</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card1">
+      <div class="card2">
+        <h3>lock</h3>
+        <p>???</p>
+      </div>
+    </div>
+
+    <div class="card1">
+      <div class="card2">
+        <h3>lock</h3>
+        <p>???</p>
+      </div>
+    </div>  
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+    <script>
+    const links = document.querySelectorAll("nav ul li a");
+
+    links.forEach(link => {
+        link.addEventListener("click", function() {
+            // remove active class from all
+            links.forEach(l => l.classList.remove("active"));
+
+            // add active class to the clicked one
+            this.classList.add("active");
+        });
+    });
+</script>
+</body>
+</html>
