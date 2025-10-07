@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(to left bottom,#ba0000, black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    animation: 
+        blurIn 11s ease-in forwards;
+}
+@keyframes blurIn {
+    0% { filter: blur(0); }
+    100% { filter:blur(10px); }
+}
+
+.pf1 {
+    margin: 0;
+    position: relative;
+  background: linear-gradient(to bottom,#550000, #000b11);
+  background-clip: text;
+  color: transparent;
+    animation: slideUp 2s ease-in forwards;
+}
+
+@keyframes slideUp{
+      0% {
+    top: 1px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.wlc {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: slideDown 2s ease-in forwards;
+}
+
+@keyframes slideDown{
+      0% {
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.pf1, .wlc, .typing {
+    margin: 0;
+    padding: 0;
+}
+
+.typing {
+    font-size: 18px;
+    background-color: #7c0000;
+    border-radius: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation:
+    typing 2s steps(14, end) 1s forwards,
+    blink .7s step-end infinite 1s,
+    hide-cursor 0.01s 3.1s forwards;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 9ch; }
+}
+
