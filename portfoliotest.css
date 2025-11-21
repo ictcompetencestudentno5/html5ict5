@@ -1,26 +1,28 @@
+/* ----------------- GLOBAL STYLES ----------------- */
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 260px; 
+    scroll-behavior: smooth; /* smooth scrolling between anchors */
+    scroll-padding-top: 260px; /* offset for fixed header */
 }
+
 body {
-    user-select: none;
-    background: url(20215.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
+    user-select: none; /* prevents text selection */
+    background: url(20215.jpg); /* background image */
+    background-size: cover; /* cover entire page */
+    background-repeat: no-repeat; /* no repeat */
+    background-attachment: fixed; /* fixed background on scroll */
+    color: white; /* default text color */
     padding: 0;
     margin: 0;
 }
 
 /* dev red color */
 #red {
-    color: red;
+    color: red; /* specific red for DEV logo */
 }
 
-/* NAVBAR */
+/* ----------------- NAVBAR ----------------- */
 nav {
-    background: linear-gradient(to top, #380000, #000000);
+    background: linear-gradient(to top, #380000, #000000); /* dark red gradient */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,21 +33,20 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1000;
-    animation: slide 2s ease;
+    animation: slide 2s ease; /* entrance animation */
 }
 
-/*NAV ANIMATION*/
+/* NAVBAR SLIDE ANIMATION */
 @keyframes slide {
     from {
-        transform: translateY(-300px);
+        transform: translateY(-300px); /* start above screen */
     }
-
     to {
-        transform: translateY(1%);
+        transform: translateY(1%); /* final position */
     }
 }
 
-/* MENU */
+/* NAV MENU */
 nav ul {
     display: flex;
     justify-content: center; 
@@ -63,24 +64,25 @@ nav ul {
     left: 100px;
 }
 
+/* NAV LINKS */
 nav ul li a {
     font-size: 11px;
     position: relative;
-    color: gray;
+    color: gray; /* default inactive color */
     display: block;
     padding: 14px 16px;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.3s; /* smooth hover effect */
 }
 
-/* HOVER */
+/* HOVER EFFECT */
 nav ul li a:hover {
     color: white;
     background: #222;
     border-radius: 1px;
 }
 
-/*LINE AFTER*/
+/* LINE ANIMATION UNDER LINK */
 a::after {
     content: "";
     position: absolute;
@@ -91,24 +93,28 @@ a::after {
     background: red;           
     transition: width 0.3s ease-in-out;
 }
+
 a:hover::after {
-    width: 100%;
+    width: 100%; /* line expands on hover */
 }
 
+/* ACTIVE LINK LINE */
 a.active::after {
     width: 100%;
     background: red;
 }
+
+/* HIDE ACTIVE LINE ON UL HOVER */
 ul:hover a.active::after {
     width: 0;
 }
 
-/* ACTIVE LINK */
+/* ACTIVE LINK COLOR */
 nav ul li a.active {
     color: white;
 }
 
-/* MAIN */
+/* ----------------- MAIN CONTENT ----------------- */
 .a {
     position: absolute;
     left: 15%;
@@ -122,8 +128,7 @@ nav ul li a.active {
     bottom: 62%;
 }
 
-
-/* Hero Section Layout */
+/* HERO SECTION */
 .SetA {
     display: flex;
     justify-content: space-between;
@@ -134,7 +139,7 @@ nav ul li a.active {
     color: white;
 }
 
-/* Left Side */
+/* Left side (text) */
 .left {
     text-align: left;
     display: flex;
@@ -143,17 +148,20 @@ nav ul li a.active {
     align-items: flex-start;
 }
 
+/* Title */
 .strand {
     font-size: 3rem;
     margin: 10px 0;
 }
 
+/* Subtitle */
 .hobby {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: #aaa;
 }
 
+/* W3School Button */
 .w3school {
     display: inline-block;
     border: 1px solid red;
@@ -168,9 +176,10 @@ nav ul li a.active {
 
 .w3school:hover {
     border: 2px solid darkred;
-    box-shadow: 0 0 15px red;
+    box-shadow: 0 0 15px red; /* glow effect on hover */
 }
 
+/* SOCIAL ICONS */
 .social-icons {
     display: flex;
     gap: 15px;
@@ -183,10 +192,10 @@ nav ul li a.active {
 }
 
 .social-icons a:hover {
-    color: red;
+    color: red; /* hover color */
 }
 
-/* Right Side */
+/* Right side (image) */
 .right {
     flex: 1;
     display: flex;
@@ -199,12 +208,12 @@ nav ul li a.active {
     margin-left: 155px;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 50%; /* circle image */
     border: 5px solid black;
-    box-shadow: 0 0 30px red;
+    box-shadow: 0 0 30px red; /* red glow */
 }
 
-/* SETB */
+/* ----------------- ABOUT SECTION ----------------- */
 .SetB {
     display: flex;
     justify-content: space-between;
@@ -224,7 +233,7 @@ nav ul li a.active {
     margin-top: 100px;
 }
 
-/* LEFT SIDE (text) */
+/* Text container */
 .about-container {
     flex: 2;
     display: flex;
@@ -239,7 +248,7 @@ nav ul li a.active {
     line-height: 1.6;
 }
 
-/* RIGHT SIDE (card) */
+/* CODE CARD */
 .card {
     background-color: #380000;
     border-radius: 8px;
@@ -253,8 +262,7 @@ nav ul li a.active {
     margin-top: 185px;
 }
 
-
- /* color */
+/* CODE COLORS */
 .line { border-right: 1px groove grey;}
 .c { color: #6A9955;}
 .class { color: #82aaff;}
@@ -262,12 +270,13 @@ nav ul li a.active {
 .string { color: #CE9178;}
 .g { color: gray;}
 
-/* ANIMATION ALL */
+/* HERO TEXT TYPING ANIMATION */
 .strand {
     overflow: hidden;
     white-space: nowrap;
     animation: Typing steps(14, end) 2s forwards, 
-    blink 1s step-end infinite 3s}
+               blink 1s step-end infinite 3s;
+}
 
 @keyframes Typing {
     from { width: 0; border-right-color: transparent; }
@@ -275,15 +284,15 @@ nav ul li a.active {
     to { width: 18ch; border-right-color: white;}
 }
 
-/* PROJECTS */
-.SetC  {
+/* ----------------- PROJECTS SECTION ----------------- */
+.SetC {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 15px;  
     width: 80%;
     min-height: 100vh;
-    background-image: linear-gradient(to left top, #000000 0%, 	#450000 25%, #7f000030 50%,	#bd0000 75%,	#ff0000 100%);
+    background-image: linear-gradient(to left top, #000000 0%, #450000 25%, #7f000030 50%, #bd0000 75%, #ff0000 100%);
     font-size: 28px;
     margin-left: 150px;
     margin-bottom: 30px;
@@ -293,7 +302,7 @@ nav ul li a.active {
     gap: 100px;
 }
 
-/* Outer gradient card */
+/* PROJECT CARD */
 .card1 {
     background-image: linear-gradient(to right top, black, red);
     border-radius: 12px;
@@ -308,41 +317,41 @@ nav ul li a.active {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
 
-}
 .card1:hover {
-  padding: 50px;
-  box-shadow: black 0% 10%;
+    padding: 50px;
+    box-shadow: black 0% 10%; /* hover effect */
 }
+
+/* PROJECT LINKS */
 .a2 {
-  background-color: #000000;
-  border-radius: 10px;
-  list-style-position: inside;
-  padding: 5px 10px;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 16px;
+    background-color: #000000;
+    border-radius: 10px;
+    list-style-position: inside;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .a2:hover {
-  padding: 15px;
-
+    padding: 15px; /* enlarge on hover */
 }
 
-
-
+/* PROJECT SECTION TITLE */
 .section-link {
-  background: linear-gradient(to bottom, #ff1a1a, #b30000, #000000);
-  color: white;
-  display: block;     
-  text-align: center;       
-  font-size: 32px;
-  margin-bottom: 20px;
-  margin-left: 26px;
-  text-decoration: none;
-  font-weight: bold;
-  height: 45px;
-  width: 600px;
-  border-radius: 8px;
+    background: linear-gradient(to bottom, #ff1a1a, #b30000, #000000);
+    color: white;
+    display: block;     
+    text-align: center;       
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-left: 26px;
+    text-decoration: none;
+    font-weight: bold;
+    height: 45px;
+    width: 600px;
+    border-radius: 8px;
 }   
