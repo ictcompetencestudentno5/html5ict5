@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+</head>
+<body>
+    <h1>Booleans</h1>
+    <h3>first example</h3>
+    <p id="ex1"></p>
+    <h3>second example</h3>
+    <p id="ex2"></p>
+
+    <script>
+//      first example
+        let x = 5;
+        console.log(x == 5)
+        document.getElementById("ex1").innerHTML = "x == 5: " + (x == 5);
+        
+//      second example
+        let isAttacking = true;
+
+        if (isAttacking) {
+            console.log("enemy is hit");
+            document.getElementById("ex2").innerHTML = "enemy is hit";
+        } else {
+            console.log("enemy attacked");
+            document.getElementById("ex2").innerHTML = "enemy attacked";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch statement</title>
+</head>
+<body>
+    <h1>switch statement</h1>
+    <p id="atk"></p>
+
+
+    <script>
+        let action = "2";
+    switch (action) {
+    case "1":
+        console.log("You hit the enemy!");
+        document.getElementById("atk").innerHTML = "You hit the enemy!"
+        break;
+    case "2":
+        console.log("You restored health!");
+        document.getElementById("atk").innerHTML = "You restored health!"
+        break;
+    case "3":
+        console.log("You used a special attack!");
+        document.getElementById("atk").innerHTML = "You used a special attack!"
+        break;
+    default:
+        console.log("Unknown action.");
+        document.getElementById("atk").innerHTML = "Unknown action."
+}
+
+    </script>
+</body>
+</html>
