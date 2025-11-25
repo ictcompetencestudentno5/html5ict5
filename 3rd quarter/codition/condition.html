@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statement</title>
+</head>
+<body>
+    <h1 id="conditional">coditional statement</h1>
+    <p>Health: <span id="health">100</span></p>
+    <button id="Btn" onclick="button()">Set health to 0</button>
+
+    <script>
+        let health = 100;
+        
+        if(health > 0) {
+            console.log("player is still alive")
+        } else {
+            console.log("player dead")
+        }
+
+        function updateHealthDisplay() {
+            const el = document.getElementById('health');
+            if (el) el.textContent = String(health);
+        }
+
+        function button() {
+            health = 0;
+            updateHealthDisplay();
+            const btn = document.getElementById('Btn');
+            console.log("player is dead")
+            if (btn) btn.disabled = true;
+        }
+
+
+
+        let temperature = 18;
+
+        if (temperature > 30) {
+            console.log("It's very hot outside.");
+        } else if (temperature > 20) {
+            console.log("It's warm outside.");
+        } else if (temperature > 10) {
+            console.log("It's cool outside.");
+        } else if (temperature > 0) {
+            console.log("It's cold outside.");
+        } else {
+            console.log("It's freezing outside!");
+        }
+    </script>
+</body>
+</html>
