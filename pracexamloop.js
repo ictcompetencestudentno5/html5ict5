@@ -7,9 +7,6 @@ let attackPower = 25;
 document.getElementById("attackBtn").addEventListener("click", function() {        
     let enemyChoice = document.getElementById("enemySelect").value;
     let result = "";
-
-
-            
     for (let i = 1; i <= 2; i++) {
         let hp;
         switch(i) {
