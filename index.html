@@ -6,17 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    <select id="enemySelect">
-        <option value=" ">choose your enemy</option>
-        <option value="enemy1">enemy1</option>
-        <option value="enemy2">enemy2</option>
-    </select>
-    <button id="attackBtn">Attack</button>
-    <p id="enemy"></p>
-    <p id="result"></p>
+    <div id="enemystr"></div>
 
+    <div class="controls">
+        <label for="enemySelect">Choose Enemy<label>
+        <select id="enemySelect">
+            <option value="enemy1">Enemy 1</option>
+            <option value="enemy2">Enemy 2</option>
+        </select>
 
+        <label for="weaponSelect">Choose Weapon</label>
+        <select id="weaponSelect">
+            <option value="sword">Sword (15 DMG - Close Range)</option>
+            <option value="bow">Bow (20 DMG - Long Range)</option>
+        </select>
 
+        <p id="loading"></p>
+        <button id="attackBtn">Attack</button>
+    </div>
+
+    <h2>Battle Result:</h2>
+    <div id="result">Select enemy and weapon, then click Attack!</div>
 
     <script src="pracexamloop.js"></script>
 </body>
