@@ -1,6 +1,6 @@
 let enemy1 = 40;   
 let enemy2 = 60;
-let playerHP = 1;
+let playerHP = 100;
 
 let swordDamage = 20;
 let bowDamage = 15;
