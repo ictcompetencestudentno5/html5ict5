@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+
+    <label for="usernameInput">Username</label>
+    <input id="usernameInput" type="text" minlength="3" maxlength="12" oninput="checkInput()">
+
+    <label for="surnameInput">Surname</label>
+    <input id="surnameInput" type="text" minlength="3" maxlength="12" oninput="checkInput()">
+
+    <label for="passwordInput">Password</label>
+    <input type="password" id="passwordInput" oninput="checkInput()">
+
+    <button id="btn" onclick="send()" disabled>Submit</button>
+
+<script>
+    const btn = document.getElementById("btn");
+
+    function checkInput() {
+        const username = document.getElementById("usernameInput").value;
+        const surname = document.getElementById("surnameInput").value;
+        const password = document.getElementById("passwordInput").value;
+
+        // Button enabled only if all fields are valid
+        btn.disabled = !(
+            username.length >= 3 && username.length <= 12 &&
+            surname.length >= 3 && surname.length <= 12 &&
+            password.length > 0
+        );
+    }
+
+    function send() {
+        const username = document.getElementById("usernameInput").value;
+        const surname = document.getElementById("surnameInput").value;
+        const password = document.getElementById("passwordInput").value;
+
+        // Combine name + surname in console
+        console.log(`Full Name: ${username} + ${surname}`);
+        console.log(`Password: ${password}`);
+
+        btn.disabled = true; 
+        btn.innerText = "Valid!";
+        btn.style.backgroundColor = "green";
+        btn.style.color = "white";
+
+        setTimeout(() => {
+            btn.innerText = "Submit";
+            btn.style.backgroundColor = "";
+            btn.style.color = "";
+            checkInput(); // re-enable if inputs still valid
+        }, 1000);
+    }
+</script>
+</body>
+</html>
