@@ -35,7 +35,7 @@ function calculate() {
             result = prev * current;
             break;
         case '/':
-            if (current === 0) {
+            if (current === 0) { //return if dividing by zero
                 alert("Cannot divide by zero");
                 return;
             }
