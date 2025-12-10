@@ -20,8 +20,8 @@ function appendOperation(op) { //operator
 function calculate() {
     if (previousInput === '' || currentInput === '' || currentOperation === '') return;
 
-    const prev = parseFloat(previousInput);
-    const current = parseFloat(currentInput);
+    const prev = parseFloat(previousInput);  //converts a string into a decimal number.
+    const current = parseFloat(currentInput);  
     let result;
 
     switch (currentOperation) {
