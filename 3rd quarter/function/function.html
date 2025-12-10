@@ -7,6 +7,34 @@
 </head>
 <body>
 
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <p id="demo3"></p>
+
+
+
+
+    <!--
+            function = key / keyword
+            myName = function name
+            {} = body
+
+            //standard form
+            function message(){
+                console.log("hello")
+            }
+
+            //arrow form
+            myfunction = (a, b) => a*b;
+
+            let result = myfunction(1, 1);
+            console.log(result)
+
+            fucntion can have local variables
+
+    -->
+
     <script>
         function Ex() {
             alert("This is a function example!");
@@ -20,11 +48,43 @@
 
         Ex2();
 
-        function Ex3(ex3) {
-            console.log("Hello, " + ex3 +"!");
+        //standard function
+        function Ex3() {
+            console.log("Hello");
         }
 
-        Ex3("User");
+        Ex3();
+
+        //arrow forms of functions
+        let Myfunction = (a, b) => a*b; //test arrow function A shortcut quick way to write functions
+
+
+        let result = Myfunction(4, 5);
+        document.getElementById("demo").innerHTML = result;
+
+        let printMessage = () => "Hello World!";
+        document.getElementById("demo2").innerHTML = printMessage();
+
+
+
+        //local variable example
+        function localVarExample() {
+            let localVar = "I am a local variable";
+            console.log(localVar);
+        }
+
+        let mycar = "Toyota";
+
+        function newcar(){
+            let mycar = "Honda";
+            console.log(mycar);
+        }
+        newcar(); // Outputs: Honda
+
+
+        addition = (add1, add2) => add1 + add2;
+
+        let add = document.getElementById("demo3")
     </script>
 </body>
 </html>
