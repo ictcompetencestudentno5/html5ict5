@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--OBJECT can have property example name, health, damage, etc-->
+        <!--Collections of key-value pair or property name-->
+
+    <script>
+        //default property
+        function player(health, speed, level) {
+            this.health = 100; // this refers to the object:
+            this.speed = 50;
+            this.level = 1;
+        }
+
+        function armor(damage, durability) {
+            this.damage = 25;
+            this.durability = 50;
+        }
+
+
+        //instance
+        const player1 = new player();
+        const armor1 = new armor();
+        console.log("player1", player1);
+
+        //add property
+        player1.armor = armor1
+
+        const levelup = {
+            player1, 
+            health: 200,
+            speed: 150,
+            level: 2
+        }
+
+        console.log("player Lvl up", levelup)
+
+
+        //delete property
+        delete player1.stamina;
+
+
+    </script>
+</body>
+</html>
