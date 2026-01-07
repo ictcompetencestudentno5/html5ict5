@@ -19,30 +19,34 @@
     </div> <br>
     <div id="game-container">
         <div class="player-container" id="player1">
-            <h2 id="player1-title">Racelle</h2>
+            <h2 id="player1-title">player1</h2>
             <h3 id="player1-health">Health: 100</h3>
             <div class="health-bar"><div id="player1-health-bar" 
                 class="health-bar-inner"></div></div>
             <h3>Wins: <span id="player1-wins">0</span></h3>
 
 
-            <select id="player1-weapon">
-                <option value="Sword">fist</option>
-            </select>
+            <div id="player1-weapon">
+                <input type="radio" name="player1-weapon" value="Sword" id="p1-sword" checked><label for="p1-sword"><img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/28517/sword-clipart-md.png" alt="sword" width="50"></label>
+                <input type="radio" name="player1-weapon" value="bow" id="p1-bow"><label for="p1-bow"><img src="https://th.bing.com/th/id/OIP.k0zCAjMn6izg-50E0cRzTgHaHa?w=137&h=150&c=6&o=7&dpr=1.1&pid=1.7&rm=3" alt="bow" width="50"></label>
+                <input type="radio" name="player1-weapon" value="axe" id="p1-axe"><label for="p1-axe"><img src="https://th.bing.com/th/id/OIP.O5uJi6dvrcAcfwnxSlPgfgHaEt?w=277&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt="axe" width="50"></label>
+            </div>
             <button id="player1-attack" 
             onclick="playerAttack(1)" disabled>Attack</button>
+
+
         </div>
         <div class="player-container" id="player2">
-            <h2 id="player2-title">Nigger</h2>
+            <h2 id="player2-title">player2</h2>
             <h3 id="player2-health">Health: 100</h3>
             <div class="health-bar"><div id="player2-health-bar" 
                 class="health-bar-inner"></div></div>
             <h3>Wins: <span id="player2-wins">0</span></h3>
-            <select id="player2-weapon">
-                <option value="Sword">glock</option>
-                <option value="Axe">m4</option>
-                <option value="Bow">bazuka</option>
-            </select>
+            <div id="player2-weapon">
+                <input type="radio" name="player2-weapon" value="Sword" id="p2-sword" checked><label for="p2-sword"><img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/28517/sword-clipart-md.png" alt="sword" width="50"></label>
+                <input type="radio" name="player2-weapon" value="bow" id="p2-bow"><label for="p2-bow"><img src="https://th.bing.com/th/id/OIP.k0zCAjMn6izg-50E0cRzTgHaHa?w=137&h=150&c=6&o=7&dpr=1.1&pid=1.7&rm=3" alt="bow" width="50"></label>
+                <input type="radio" name="player2-weapon" value="axe" id="p2-axe"><label for="p2-axe"><img src="https://th.bing.com/th/id/OIP.O5uJi6dvrcAcfwnxSlPgfgHaEt?w=277&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt="axe" width="50"></label>
+            </div>
             <button id="player2-attack" onclick="playerAttack(2)" 
             disabled>Attack</button>
         </div>
