@@ -11,9 +11,9 @@ let player1, player2;
 let currentPlayer;
 
 const weapons = {
-    sword:{minDamage: 1, hitChance: 0.5},
-    bow:{minDamage: 1},
-    axe:{minDamage: 1}
+    sword:{minDamage: 5, crit:10, hitChance: 0.9},
+    bow:{minDamage: 7, crit: 14, hitChance: 0.3},
+    axe:{minDamage: 4, crit: 8, hitChance: 0.5}
 };
 
 function validateNames() {
@@ -66,9 +66,18 @@ function playerAttack(playerNum) {
     let hit = Math.random() < hitChance;
 
     if (hit) {
-        let damage = weapon.minDamage + Math.floor(Math.random() * 10); // random damage 1-10
+        let isCrit = Math.random() < 0.2;
+        let damage;
+        
+        if (isCrit) {
+            damage = weapon.crit + Math.floor(Math.random() * 20); // crit damage
+            messageLog(`${attacker.name} lands a critical hit on ${defender.name} with ${weaponName} for ${damage} damage!`);
+        } else {
+            damage = weapon.minDamage + Math.floor(Math.random() * 15); // normal damage
+            messageLog(`${attacker.name} lands a normal hit on ${defender.name} with ${weaponName} for ${damage} damage!`);
+        }
+        
         defender.health -= damage;
-        messageLog(`${attacker.name} attacks ${defender.name} with ${weaponName} for ${damage} damage!`);
 
         // Update health display
         document.getElementById(`player${3-playerNum}-health`).innerHTML = "Health: " + defender.health;
